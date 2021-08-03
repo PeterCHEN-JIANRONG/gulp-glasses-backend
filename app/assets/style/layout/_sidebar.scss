@@ -24,6 +24,10 @@
         color: $success !important;
         padding-left: 28px;
         border-left: 4px solid $success;
+
+        i {
+          color: $success;
+        }
       }
     }
 

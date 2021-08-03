@@ -1,0 +1,16 @@
+.admin {
+
+  .page-link {
+    color: $success;
+
+    &:hover,
+    &:focus {
+      color: #218054;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: $success;
+    border-color: $success;
+  }
+}

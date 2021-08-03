@@ -10,6 +10,15 @@ ul {
   list-style: none;
 }
 
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  // display: block; //與vertical-align擇一使用
+}
+
+// .main內文
 .main {
   padding-left: 8px;
 }

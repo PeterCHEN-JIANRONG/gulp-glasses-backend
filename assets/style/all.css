@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .font-lato {
   font-family: "Lato", sans-serif; }
 
@@ -34,42 +35,79 @@
 .text-gray-9 {
   color: #212529; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 body * {
-  font-family: "Lato", sans-serif, "Roboto Mono", monospace, serif; }
+  font-family: "Lato", sans-serif, "Roboto Mono", monospace, serif;
+  color: #212529; }
 
 ul {
   padding-left: 0;
   list-style: none; }
 
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
 .main {
-  padding-left: 8px; }
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.card-user .card-img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .header {
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 20px; }
+  padding-bottom: 2rem; }
 
-.sidebar .navbar {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: calc(100vh); }
-  .sidebar .navbar-brand {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 0; }
-  .sidebar .navbar .nav-item .nav-link {
-    padding-right: 0 !important;
-    padding-left: 2rem !important;
-    color: #212529 !important; }
-  .sidebar .navbar .nav-item .active {
-    color: #198754 !important;
-    border-left: 4px solid #198754; }
+.sidebar {
+  display: block;
+  min-width: 296px; }
+  .sidebar .navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: calc(100vh); }
+    .sidebar .navbar-brand {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 0; }
+    .sidebar .navbar .nav-item .nav-link {
+      padding-right: 0;
+      padding-left: 2rem;
+      color: #212529; }
+    .sidebar .navbar .nav-item .active {
+      color: #198754 !important;
+      padding-left: 28px;
+      border-left: 4px solid #198754; }
+      .sidebar .navbar .nav-item .active i {
+        color: #198754; }
+    .sidebar .navbar .collapse:not(.show) {
+      display: block; }
+  .sidebar .user {
+    margin-left: 2rem; }
+    .sidebar .user__img {
+      width: 40px;
+      height: 40px;
+      border-radius: 24px; }
 
-.sidebar .user {
-  margin-left: 2rem; }
-  .sidebar .user__img {
-    width: 40px;
-    height: 40px;
-    border-radius: 24px; }
+.assignment .list-group-item.active {
+  background-color: #f8f9fa;
+  border-color: #ced4da; }
+
+.admin .page-link {
+  color: #198754; }
+  .admin .page-link:hover, .admin .page-link:focus {
+    color: #218054; }
+
+.admin .page-item.active .page-link {
+  background-color: #198754;
+  border-color: #198754; }
 
 /*# sourceMappingURL=all.css.map */

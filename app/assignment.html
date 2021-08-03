@@ -6,7 +6,7 @@ current: assignment
 ---
 
 
-<div class="assignment">
+<section class="assignment">
   <header class="header">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
@@ -119,37 +119,66 @@ current: assignment
               </p>
               <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
             </div>
-            <div class="card-user mb-3 d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <img src="./assets/images/andychen.jpeg" alt="" class="card-img rounded-circle me-2">
-                <div>
-                  <h5 class="card-title mb-0">Andy Chen (You)</h5>
-                  <span class="fs-sm text-gray-6">13:24 AM (1 hours ago)</span>
+            <div class="own_message">
+              <div class="card-user mb-3 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/andychen.jpeg" alt="" class="card-img rounded-circle me-2">
+                  <div>
+                    <h5 class="card-title mb-0">Andy Chen (You)</h5>
+                    <span class="fs-sm text-gray-6">13:24 AM (1 hours ago)</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="material-icons cursor-pointer me-4">star_border</i>
+                  <i class="material-icons cursor-pointer">edit</i>
                 </div>
               </div>
-              <div class="d-flex align-items-center">
-                <i class="material-icons cursor-pointer me-4">star_border</i>
-                <i class="material-icons cursor-pointer">edit</i>
+              <div class="ms-5">
+                <p class="card-text">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br><br> 　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span> ) or<br>  　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.  
+                </p>
               </div>
             </div>
-            <div class="ms-5">
-              <p class="card-text">
-                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br><br> 　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span> ) or<br>  　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.  
-              </p>
+            <div class="card-edit d-none">
+              <div class="card-header d-flex align-items-center">
+                <div class="dropdown me-4">
+                  <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Body Text
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <i class="material-icons me-4">format_bold</i>
+                <i class="material-icons me-4">format_italic</i>
+                <i class="material-icons me-4">format_list_bulleted</i>
+                <i class="material-icons me-4">format_list_numbered</i>
+                <i class="material-icons me-4">image</i>
+                <i class="material-icons me-4">link</i>
+                <i class="material-icons">chevron_left</i>
+                <i class="material-icons">chevron_right</i>
+              </div>
+              <textarea id="reply_text" name="reply_text" class="textarea p-2 mb-3" rows="6" cols="" placeholder="Reply an answer…"></textarea>
+              <div class="text-end">
+                <button type="button" class="cancel_btn btn btn-outline-success px-4 py-2 me-3">Cancel</button>
+                <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center">
+        <div id="control_menu" class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <i class="material-icons cursor-pointer me-4">navigate_before</i>
             <i class="material-icons cursor-pointer">navigate_next</i>
           </div>
           <div>
             <button type="button" class="btn btn-outline-success px-4 py-2 me-3">Mark as read</button>
-            <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+            <button type="button" class="reply_btn btn btn-success px-4 py-2">Reply</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

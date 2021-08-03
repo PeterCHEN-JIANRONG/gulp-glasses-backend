@@ -12,20 +12,23 @@ $(document).ready(() => {
     $(".page-item").removeClass('active');
     e.target.parentNode.classList.add('active')
     console.log(e.target.nodeName);
-
   });
 
 
-  // navbarList.addEventListener('click', (e) => {
-  // e.preventDefault();
+  $(".reply_btn").click(function (e) {
+    e.preventDefault();
+    // // $(".page-item").toggleClass("active");
+    // $(".page-item").removeClass('active');
+    // e.target.parentNode.classList.add('active')
+    $(".own_message").toggleClass("d-none");
+    $("#control_menu").toggleClass("d-none");
+    $(".card-edit").toggleClass("d-none");
+  });
 
-  // let link = null;
-  // if (e.target.nodeName === 'A') {
-  //   link = e.target;
-  // }
-  // else if (e.target.nodeName === 'I') {
-  //   link = e.target.parentNode;
-  // }
-  // link.classList.add('active');
-
+  $(".cancel_btn").click(function (e) {
+    e.preventDefault();
+    $(".own_message").toggleClass("d-none");
+    $("#control_menu").toggleClass("d-none");
+    $(".card-edit").toggleClass("d-none");
+  });
 })

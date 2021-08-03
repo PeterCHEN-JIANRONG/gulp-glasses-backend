@@ -3,4 +3,12 @@
     background-color: $gray-100;
     border-color: $gray-400;
   }
+
+  .card {
+    .card-edit {
+      .textarea {
+        width: 100%;
+      }
+    }
+  }
 }

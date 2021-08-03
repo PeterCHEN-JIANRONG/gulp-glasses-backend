@@ -23,6 +23,7 @@ $(document).ready(() => {
     $(".own_message").toggleClass("d-none");
     $("#control_menu").toggleClass("d-none");
     $(".card-edit").toggleClass("d-none");
+    $("#reply_text").focus();
   });
 
   $(".cancel_btn").click(function (e) {

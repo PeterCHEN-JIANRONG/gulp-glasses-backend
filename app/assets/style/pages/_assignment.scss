@@ -5,10 +5,21 @@
   }
 
   .card {
+    .user-reply {
+      margin-left: 64px;
+      margin-right: 32px;
+    }
+
     .card-edit {
       .textarea {
         width: 100%;
+        height: 263px;
       }
+    }
+
+    .edit_btns {
+      bottom: 16px;
+      right: 27px;
     }
   }
 }

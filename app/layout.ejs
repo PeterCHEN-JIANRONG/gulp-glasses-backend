@@ -22,52 +22,46 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-3">
-        <div class="sidebar">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column justify-content-between align-items-start">
-            <div class="d-flex flex-column">
-              <a class="navbar-brand p-0" href="#"><img src="./assets/images/logo-ANSWER.svg" alt="logo"></a>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex flex-column">
-                  <li class="nav-item mb-4">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">assessment</i>Dashboard</a>
-                  </li>
-                  <li class="nav-item mb-4">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">question_answer</i>Question</a>
-                  </li>
-                  <li class="nav-item mb-4">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center active" href="./assignment.html"><i class="material-icons me-3">assignment</i>Assignment</a>
-                  </li>
-                  <li class="nav-item mb-4">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">video_library</i>Course</a>
-                  </li>
-                  <li class="nav-item mb-4">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">people</i>Admin</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">settings</i>Settings</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="user d-flex align-items-center">
-              <img src="./assets/images/andychen.jpeg" class="user__img me-3" alt="大頭照">
-              <div class="user__option">
-                <h4 class="user__name h6 fw-bold mb-1">Andy Chen</h4>
-                <span class="user__mail fs-sm text-gray-6">andy0401@mail.com</span>
-              </div>
-            </div>
-          </nav>
+  <div class="d-flex">
+    <div class="sidebar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column justify-content-between align-items-start">
+        <div class="d-flex flex-column">
+          <a class="navbar-brand p-0" href="#"><img src="./assets/images/logo-ANSWER.svg" alt="logo"></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-column">
+              <li class="nav-item mb-4">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">assessment</i>Dashboard</a>
+              </li>
+              <li class="nav-item mb-4">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">question_answer</i>Question</a>
+              </li>
+              <li class="nav-item mb-4">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center active" href="./assignment.html"><i class="material-icons me-3">assignment</i>Assignment</a>
+              </li>
+              <li class="nav-item mb-4">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">video_library</i>Course</a>
+              </li>
+              <li class="nav-item mb-4">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">people</i>Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">settings</i>Settings</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-9">
-        <main class="main">
-          <%- contents %>
-        </main>
-      </div>
+        <div class="user d-flex align-items-center">
+          <img src="./assets/images/andychen.jpeg" class="user__img me-3" alt="大頭照">
+          <div class="user__option">
+            <h4 class="user__name h6 fw-bold mb-1">Andy Chen</h4>
+            <span class="user__mail fs-sm text-gray-6">andy0401@mail.com</span>
+          </div>
+        </div>
+      </nav>
     </div>
+    <main class="main">
+      <%- contents %>
+    </main>
   </div>
 
   <!-- <footer class="footer">

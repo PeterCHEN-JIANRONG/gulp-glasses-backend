@@ -1,6 +1,7 @@
 body {
   * {
     font-family: $font-lato, $font-roboto-mono, serif;
+    color: $gray-900;
   }
 }
 
@@ -20,5 +21,7 @@ img {
 
 // .main內文
 .main {
-  padding-left: 8px;
+  width: 100%;
+  padding-left: $spacer-l;
+  padding-right: $spacer-l;
 }

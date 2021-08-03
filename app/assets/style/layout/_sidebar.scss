@@ -1,4 +1,7 @@
 .sidebar {
+  display: block;
+  min-width: 296px;
+
   .navbar {
     padding-top: $spacer-l;
     padding-bottom: $spacer-l;
@@ -24,8 +27,9 @@
       }
     }
 
-
-
+    .collapse:not(.show) {
+      display: block;
+    }
   }
 
   .user {

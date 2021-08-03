@@ -26,12 +26,12 @@ current: index
       </div>
       <ul class="nav-links mb-0 d-flex align-items-center">
         <li class="nav-item">
-          <a href="#" class="nav-link text-dark">
+          <a href="#" class="nav-link px-0">
             <i class="bi bi-search"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link text-dark">
+          <a href="#" class="nav-link px-0 ms-4">
             <i class="bi bi-bell-fill"></i>
           </a>
         </li>
@@ -39,5 +39,117 @@ current: index
     </div>
   </header>
   <div class="assignment__main">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <div class="d-flex align-items-center">
+        <span class="fw-bold me-2">All (4)</span>
+        <i class="material-icons text-success cursor-pointer">
+          expand_more
+        </i>
+      </div>
+      <span class="fs-sm text-gray-6">2 comments</span>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action p-2">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="fs-sm">Chapter Assignment 2</span>
+              <span class="fs-sm">4 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">Please check this file…</span>
+              <span class="fs-sm text-gray-6">Emily Wang</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action p-2">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="fs-sm">Chapter Assignment 1</span>
+              <span class="fs-sm">12 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">My Homework</span>
+              <span class="fs-sm text-gray-6">David Xu</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action p-2">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="fs-sm">Final Assignment</span>
+              <span class="fs-sm">18 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">Have a problem with this…</span>
+              <span class="fs-sm text-gray-6">Tony Wei</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action p-2">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="fs-sm">Final Assignment</span>
+              <span class="fs-sm">19 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">Did I do it right?</span>
+              <span class="fs-sm text-gray-6">Christina Lin</span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-3">
+          <h5 class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="fs-sm d-block mb-1">Chapter Assignment 2 / HTML&CSS</span>
+                <span class="fw-bold d-block">Please check this file for me, thanks!</span>
+              </div>
+              <i class="material-icons cursor-pointer">more_vert</i>
+            </div>
+          </h5>
+          <div class="card-body pe-4 pb-4">
+            <div class="card-user mb-3 d-flex align-items-center">
+              <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
+              <div>
+                <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
+                <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
+              </div>
+            </div>
+            <div class="ms-5 border-bottom pb-3 mb-3">
+              <p class="card-text">
+                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+              </p>
+              <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
+            </div>
+            <div class="card-user mb-3 d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/andychen.jpeg" alt="" class="card-img rounded-circle me-2">
+                <div>
+                  <h5 class="card-title mb-0">Andy Chen (You)</h5>
+                  <span class="fs-sm text-gray-6">13:24 AM (1 hours ago)</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="material-icons cursor-pointer me-4">star_border</i>
+                <i class="material-icons cursor-pointer">edit</i>
+              </div>
+            </div>
+            <div class="ms-5">
+              <p class="card-text">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br><br> 　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span> ) or<br>  　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.  
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <i class="material-icons cursor-pointer me-4">navigate_before</i>
+            <i class="material-icons cursor-pointer">navigate_next</i>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-success px-4 py-2 me-3">Mark as read</button>
+            <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

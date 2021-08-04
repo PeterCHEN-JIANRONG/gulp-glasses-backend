@@ -49,7 +49,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -61,7 +61,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -73,7 +73,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -85,7 +85,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -97,7 +97,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -109,7 +109,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -121,7 +121,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -133,7 +133,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -145,7 +145,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -157,7 +157,7 @@ current: admin
           <td class="py-3">Yes</td>
           <td class="py-3">
             <ul class="d-flex justify-content-end align-items-center m-0 p-0">
-              <li><i class="material-icons me-4 cursor-pointer">visibility</i></li>
+              <li><i class="material-icons me-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</i></li>
               <li><i class="material-icons cursor-pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</i></li>
             </ul>
           </td>
@@ -253,11 +253,11 @@ current: admin
 
 
 <!-- Edit Modal -->
-<div class="modal modal__new fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal modal__edit fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title h4 fw-bold" id="exampleModalLabel">New Admin</h5>
+        <h5 class="modal-title h4 fw-bold" id="exampleModalLabel">Edit Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -318,6 +318,25 @@ current: admin
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-primary">Update</button>
         </div>
+    </div>
+  </div>
+</div>
+
+<!-- View Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
 </div>

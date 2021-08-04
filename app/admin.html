@@ -10,7 +10,7 @@ current: admin
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <h1 class="title h4 fw-bold pe-5 mb-0">Admin</h1>
-        <a class="btn fw-bold d-flex align-items-center" href="#" role="button"><i class="material-icons text-success me-2">add</i>Add New Admin</a>
+        <a class="btn fw-bold d-flex align-items-center" href="#" role="button" data-bs-toggle="modal" data-bs-target="#newModal"><i class="material-icons text-success me-2">add</i>Add New Admin</a>
       </div>
       <ul class="nav-links mb-0 d-flex align-items-center">
         <li class="nav-item">
@@ -185,3 +185,67 @@ current: admin
     </div>
   </div>
 </section>
+
+<!-- New Modal -->
+<div class="modal modal__new fade" id="newModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4 fw-bold" id="exampleModalLabel">New Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form  class="form needs-validation position-relative" novalidate>
+          <div class="form-block pb-3 mb-3 border-bottom border-1">
+            <h2 class="h5 fw-bold mb-3">Account</h2>
+            <div>
+              <label for="Name" class="form-label fs-sm mb-1">Name</label>
+              <input type="text" class="form-control mb-3 h-xl border-dark" id="Name" value="" required>
+              <div class="invalid-feedback">
+                Name:為必填欄位
+              </div>
+            </div>
+            <div>
+              <label for="Email" class="form-label fs-sm mb-1">Email</label>
+              <input type="email" class="form-control h-xl border-dark" id="Email" value="" required>
+              <div class="invalid-feedback">
+                Email:為必填欄位
+              </div>
+            </div>
+          </div>
+          <div class="form-block pb-3 mb-3 border-bottom border-1">
+            <label for="Verification" class="h5 fw-bold mb-3">Verification</label>
+            <small class="d-flex align-items-center mb-3 h6"><i class="material-icons me-2">warning</i>Unverified</small>
+            <input type="button" id="Verification" class="btn btn-outline-primary w-100 rounded-1 h-xl fw-bold" value="Send Verification Mail">
+          </div>
+          <div class="form-block pb-3 mb-3 border-bottom border-1">
+            <label for="Access" class="h5 fw-bold mb-3">Access Level</label>
+            <select class="form-select" id="Access" class="form-control" required>
+              <option selected disabled>-Choose access level-</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <div class="invalid-feedback">
+              Access Level:為必填欄位
+            </div>
+          </div>
+          <div class="form-block">
+            <h2 class="h5 fw-bold mb-3">Custom Access</h2>
+            <ul class="m-0">
+              <li class="mb-3"><input type="checkbox" class="me-3" name="Lecture" id="Lecture"><label for="Lecture" class="">Lecture</label></li>
+              <li class="mb-3"><input type="checkbox" class="me-3" name="Coupon" id="Coupon"><label for="Coupon" class="">Coupon</label></li>
+              <li class="mb-3"><input type="checkbox" class="me-3" name="Message" id="Message"><label for="Message" class="">Message</label></li>
+              <li class="mb-3"><input type="checkbox" class="me-3" name="Setting" id="Setting"><label for="Setting" class="">Setting</label></li>
+              <li class=""><input type="checkbox" class="me-3" name="Task Menu" id="Task Menu"><label for="Task Menu" class="">Task Menu</label></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </div>
+  </div>
+</div>

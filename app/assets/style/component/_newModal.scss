@@ -1,0 +1,26 @@
+.modal__new {
+
+  .modal-content {
+    height: 736px;
+  }
+
+  .modal-header {
+    padding: 32px;
+    border: 0;
+  }
+
+  .modal-body {
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+
+  .modal-footer {
+    padding-right: 32px;
+
+    .btn {
+      padding: 8px 32px;
+    }
+  }
+}

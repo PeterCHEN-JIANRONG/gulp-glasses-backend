@@ -62,7 +62,7 @@
     <main class="main">
       
 
-<div class="assignment">
+<section class="assignment">
   <header class="header">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
@@ -106,8 +106,8 @@
     </div>
     <div class="row">
       <div class="col-lg-4 mb-3">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action p-2">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action p-2 active" id="list-item-1" data-bs-toggle="list" href="#item-message-1" role="tab">
             <div class="d-flex justify-content-between mb-2">
               <span class="fs-sm">Chapter Assignment 2</span>
               <span class="fs-sm">4 hrs ago</span>
@@ -117,7 +117,7 @@
               <span class="fs-sm text-gray-6">Emily Wang</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action p-2">
+          <a class="list-group-item list-group-item-action p-2" id="list-item-2" data-bs-toggle="list" href="#item-message-2" role="tab">
             <div class="d-flex justify-content-between mb-2">
               <span class="fs-sm">Chapter Assignment 1</span>
               <span class="fs-sm">12 hrs ago</span>
@@ -127,7 +127,7 @@
               <span class="fs-sm text-gray-6">David Xu</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action p-2">
+          <a class="list-group-item list-group-item-action p-2" id="list-item-3" data-bs-toggle="list" href="#item-message-3" role="tab">
             <div class="d-flex justify-content-between mb-2">
               <span class="fs-sm">Final Assignment</span>
               <span class="fs-sm">18 hrs ago</span>
@@ -137,7 +137,7 @@
               <span class="fs-sm text-gray-6">Tony Wei</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action p-2">
+          <a class="list-group-item list-group-item-action p-2" id="list-item-4" data-bs-toggle="list" href="#item-message-4" role="tab">
             <div class="d-flex justify-content-between mb-2">
               <span class="fs-sm">Final Assignment</span>
               <span class="fs-sm">19 hrs ago</span>
@@ -147,68 +147,286 @@
               <span class="fs-sm text-gray-6">Christina Lin</span>
             </div>
           </a>
-          
         </div>
       </div>
       <div class="col-lg-8">
-        <div class="card mb-3">
-          <h5 class="card-header">
-            <div class="d-flex justify-content-between align-items-center">
-              <div>
-                <span class="fs-sm d-block mb-1">Chapter Assignment 2 / HTML&CSS</span>
-                <span class="fw-bold d-block">Please check this file for me, thanks!</span>
-              </div>
-              <i class="material-icons cursor-pointer">more_vert</i>
-            </div>
-          </h5>
-          <div class="card-body pe-4 pb-4">
-            <div class="card-user mb-3 d-flex align-items-center">
-              <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
-              <div>
-                <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
-                <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
-              </div>
-            </div>
-            <div class="ms-5 border-bottom pb-3 mb-3">
-              <p class="card-text">
-                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
-              </p>
-              <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
-            </div>
-            <div class="card-user mb-3 d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <img src="./assets/images/andychen.jpeg" alt="" class="card-img rounded-circle me-2">
-                <div>
-                  <h5 class="card-title mb-0">Andy Chen (You)</h5>
-                  <span class="fs-sm text-gray-6">13:24 AM (1 hours ago)</span>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="item-message-1" role="tabpanel">
+            <div class="card mb-3">
+              <h5 class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fs-sm d-block mb-1">Chapter Assignment 2 / HTML&CSS</span>
+                    <span class="fw-bold d-block">Please check this file for me, thanks!</span>
+                  </div>
+                  <i class="material-icons cursor-pointer">more_vert</i>
+                </div>
+              </h5>
+              <div class="card-body px-0 pb-0">
+                <ul>
+                  <li class="other_message">
+                    <div class="card-user ps-3 mb-3 d-flex align-items-center">
+                      <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
+                      <div>
+                        <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
+                        <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
+                      </div>
+                    </div>
+                    <div class="user-reply border-bottom pb-3 mb-3">
+                      <p class="card-text">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                      </p>
+                      <a class="btn btn-light fw-bold border border-1" href="./assets/images/logo-ANSWER.svg" role="button" download>
+                        <div class="d-flex align-items-center">
+                          <i class="material-icons">attach_file</i>
+                          HW-2-David.zip
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="own_message">
+                    <div class="card-user ps-3 mb-3 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img src="./assets/images/andychen.jpeg" alt="" class="card-img rounded-circle me-2">
+                        <div>
+                          <h5 class="card-title mb-0">Andy Chen (You)</h5>
+                          <span class="fs-sm text-gray-6">13:24 AM (1 hours ago)</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="material-icons cursor-pointer me-4">star_border</i>
+                        <i class="material-icons cursor-pointer">edit</i>
+                      </div>
+                    </div>
+                    <div class="user-reply mb-3">
+                      <p class="card-text">
+                        Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br><br> 　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span> ) or<br>  　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.  
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card-edit d-none position-relative">
+                  <div class="card-header d-flex align-items-center">
+                    <div class="dropdown me-4">
+                      <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Body Text
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <i class="material-icons cursor-pointer me-4">format_bold</i>
+                    <i class="material-icons cursor-pointer me-4">format_italic</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_bulleted</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_numbered</i>
+                    <i class="material-icons cursor-pointer me-4">image</i>
+                    <i class="material-icons cursor-pointer me-4">link</i>
+                    <i class="material-icons cursor-pointer">chevron_left</i>
+                    <i class="material-icons cursor-pointer">chevron_right</i>
+                  </div>
+                  <textarea id="reply_text" name="reply_text" class="textarea p-2 d-block border-0" rows="" cols="" placeholder="Reply an answer…"></textarea>
+                  <div class="edit_btns position-absolute">
+                    <button type="button" class="cancel_btn btn btn-outline-success px-4 py-2 me-3">Cancel</button>
+                    <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+                  </div>
                 </div>
               </div>
-              <div class="d-flex align-items-center">
-                <i class="material-icons cursor-pointer me-4">star_border</i>
-                <i class="material-icons cursor-pointer">edit</i>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="item-message-2" role="tabpanel">
+            <div class="card mb-3">
+              <h5 class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fs-sm d-block mb-1">Chapter Assignment 1 / HTML&CSS</span>
+                    <span class="fw-bold d-block">My Homework</span>
+                  </div>
+                  <i class="material-icons cursor-pointer">more_vert</i>
+                </div>
+              </h5>
+              <div class="card-body px-0 pb-0">
+                <ul>
+                  <li class="other_message">
+                    <div class="card-user ps-3 mb-3 d-flex align-items-center">
+                      <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
+                      <div>
+                        <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
+                        <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
+                      </div>
+                    </div>
+                    <div class="user-reply border-bottom pb-3 mb-3">
+                      <p class="card-text">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                      </p>
+                      <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card-edit d-none position-relative">
+                  <div class="card-header d-flex align-items-center">
+                    <div class="dropdown me-4">
+                      <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Body Text
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <i class="material-icons cursor-pointer me-4">format_bold</i>
+                    <i class="material-icons cursor-pointer me-4">format_italic</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_bulleted</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_numbered</i>
+                    <i class="material-icons cursor-pointer me-4">image</i>
+                    <i class="material-icons cursor-pointer me-4">link</i>
+                    <i class="material-icons cursor-pointer">chevron_left</i>
+                    <i class="material-icons cursor-pointer">chevron_right</i>
+                  </div>
+                  <textarea id="reply_text" name="reply_text" class="textarea p-2 d-block border-0" rows="" cols="" placeholder="Reply an answer…"></textarea>
+                  <div class="edit_btns position-absolute">
+                    <button type="button" class="cancel_btn btn btn-outline-success px-4 py-2 me-3">Cancel</button>
+                    <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ms-5">
-              <p class="card-text">
-                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br><br> 　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span> ) or<br>  　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.  
-              </p>
+          </div>
+          <div class="tab-pane fade" id="item-message-3" role="tabpanel">
+            <div class="card mb-3">
+              <h5 class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fs-sm d-block mb-1">Final Assignment / HTML&CSS</span>
+                    <span class="fw-bold d-block">Have a problem with this…</span>
+                  </div>
+                  <i class="material-icons cursor-pointer">more_vert</i>
+                </div>
+              </h5>
+              <div class="card-body px-0 pb-0">
+                <ul>
+                  <li class="other_message">
+                    <div class="card-user ps-3 mb-3 d-flex align-items-center">
+                      <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
+                      <div>
+                        <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
+                        <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
+                      </div>
+                    </div>
+                    <div class="user-reply border-bottom pb-3 mb-3">
+                      <p class="card-text">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                      </p>
+                      <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card-edit d-none position-relative">
+                  <div class="card-header d-flex align-items-center">
+                    <div class="dropdown me-4">
+                      <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Body Text
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <i class="material-icons cursor-pointer me-4">format_bold</i>
+                    <i class="material-icons cursor-pointer me-4">format_italic</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_bulleted</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_numbered</i>
+                    <i class="material-icons cursor-pointer me-4">image</i>
+                    <i class="material-icons cursor-pointer me-4">link</i>
+                    <i class="material-icons cursor-pointer">chevron_left</i>
+                    <i class="material-icons cursor-pointer">chevron_right</i>
+                  </div>
+                  <textarea id="reply_text" name="reply_text" class="textarea p-2 d-block border-0" rows="" cols="" placeholder="Reply an answer…"></textarea>
+                  <div class="edit_btns position-absolute">
+                    <button type="button" class="cancel_btn btn btn-outline-success px-4 py-2 me-3">Cancel</button>
+                    <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="item-message-4" role="tabpanel">
+            <div class="card mb-3">
+              <h5 class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fs-sm d-block mb-1">Final Assignment / HTML&CSS</span>
+                    <span class="fw-bold d-block">Did I do it right?</span>
+                  </div>
+                  <i class="material-icons cursor-pointer">more_vert</i>
+                </div>
+              </h5>
+              <div class="card-body px-0 pb-0">
+                <ul>
+                  <li class="other_message">
+                    <div class="card-user ps-3 mb-3 d-flex align-items-center">
+                      <img src="./assets/images/emilywang.jpeg" alt="" class="card-img rounded-circle me-2">
+                      <div>
+                        <h5 class="card-title fw-bold mb-0">Emily Wang</h5>
+                        <span class="fs-sm text-gray-6">10:38 AM (4 hours ago)</span>
+                      </div>
+                    </div>
+                    <div class="user-reply border-bottom pb-3 mb-3">
+                      <p class="card-text">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                      </p>
+                      <button type="button" class="btn btn-light fw-bold border border-1 d-flex align-items-center"><i class="material-icons">attach_file</i>HW-2-David.zip</button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card-edit d-none position-relative">
+                  <div class="card-header d-flex align-items-center">
+                    <div class="dropdown me-4">
+                      <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Body Text
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <i class="material-icons cursor-pointer me-4">format_bold</i>
+                    <i class="material-icons cursor-pointer me-4">format_italic</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_bulleted</i>
+                    <i class="material-icons cursor-pointer me-4">format_list_numbered</i>
+                    <i class="material-icons cursor-pointer me-4">image</i>
+                    <i class="material-icons cursor-pointer me-4">link</i>
+                    <i class="material-icons cursor-pointer">chevron_left</i>
+                    <i class="material-icons cursor-pointer">chevron_right</i>
+                  </div>
+                  <textarea id="reply_text" name="reply_text" class="textarea p-2 d-block border-0" rows="" cols="" placeholder="Reply an answer…"></textarea>
+                  <div class="edit_btns position-absolute">
+                    <button type="button" class="cancel_btn btn btn-outline-success px-4 py-2 me-3">Cancel</button>
+                    <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center">
+        <div id="control_menu" class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <i class="material-icons cursor-pointer me-4">navigate_before</i>
             <i class="material-icons cursor-pointer">navigate_next</i>
           </div>
           <div>
             <button type="button" class="btn btn-outline-success px-4 py-2 me-3">Mark as read</button>
-            <button type="button" class="btn btn-success px-4 py-2">Reply</button>
+            <button type="button" class="reply_btn btn btn-success px-4 py-2">Reply</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
     </main>
   </div>
 

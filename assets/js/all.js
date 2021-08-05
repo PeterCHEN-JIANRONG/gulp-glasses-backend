@@ -2,7 +2,6 @@
 
 console.log('Hello!'); // DOM
 
-var navbarList = document.querySelector(".navbar-nav");
 $(document).ready(function () {
   console.log('HesSchool Hello!');
   $(".pagination").click(function (e) {
@@ -10,13 +9,9 @@ $(document).ready(function () {
 
     $(".page-item").removeClass('active');
     e.target.parentNode.classList.add('active');
-    console.log(e.target.nodeName);
   });
   $(".reply_btn").click(function (e) {
-    e.preventDefault(); // // $(".page-item").toggleClass("active");
-    // $(".page-item").removeClass('active');
-    // e.target.parentNode.classList.add('active')
-
+    e.preventDefault();
     $(".own_message").toggleClass("d-none");
     $("#control_menu").toggleClass("d-none");
     $(".card-edit").toggleClass("d-none");

@@ -8870,7 +8870,15 @@ img {
     .sidebar .navbar .nav-item .nav-link {
       padding-right: 0;
       padding-left: 2rem;
-      color: #212529; }
+      color: #212529;
+      border-color: #198754; }
+      .sidebar .navbar .nav-item .nav-link:hover {
+        color: #198754 !important;
+        padding-left: 29px;
+        border-left: 4px solid #198754;
+        background-color: #e9ecef; }
+        .sidebar .navbar .nav-item .nav-link:hover i {
+          color: #198754; }
     .sidebar .navbar .nav-item .active {
       color: #198754 !important;
       padding-left: 28px;

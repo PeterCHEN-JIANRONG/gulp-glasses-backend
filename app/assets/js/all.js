@@ -33,6 +33,10 @@ $(document).ready(() => {
     $(".card-edit").toggleClass("d-none");
   });
 
+  $(".expand-icon").click(function (e) {
+    e.preventDefault();
+    $(".expand-btn").toggleClass("d-none");
+  });
 })
 
 

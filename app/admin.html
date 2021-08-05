@@ -323,20 +323,42 @@ current: admin
 </div>
 
 <!-- View Modal -->
-<div class="modal fade" id="viewModal" tabindex="-1">
+<div class="modal modal__view fade" id="viewModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
+      <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body p-0 d-flex">
+        <img src="./assets/images/emir.jpeg" class="modal-img me-4" alt="">
+        <div class="flex-grow-1">
+          <div class="mb-2 d-flex justify-content-between align-items-center">
+            <span class="">#1</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <span>Admin</span>
+          <h2 class="h4 mb-2" >Emir Wicks</h2>
+          <small class="text-gray-600">emir.wicks@mail.com</small>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="badge badge bg-light text-dark px-2 py-1 rounded-1">Verified</span>
+            <div>
+              <a class="btn expand-btn p-0" data-bs-toggle="collapse" href="#collapseExample" role="button"><i class="material-icons expand-icon text-success">expand_more</i></a>
+              <a class="btn expand-btn p-0 d-none" data-bs-toggle="collapse" href="#collapseExample" role="button"><i class="material-icons expand-icon text-success">expand_less</i></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="collapse" id="collapseExample">
+        <div class="collapse-options text-end">
+          <button type="button" class="btn py-2 btn-outline-danger me-3" data-bs-dismiss="modal">Deactivate</button>
+          <button type="button" class="btn py-2 btn-primary">Edit</button>
+        </div>
       </div>
-      <div class="modal-footer">
+      <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

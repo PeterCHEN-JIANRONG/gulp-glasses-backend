@@ -25,3 +25,25 @@
     }
   }
 }
+
+.modal__view {
+  .modal-content {
+    max-width: 480px;
+    padding: 32px;
+  }
+
+  .modal-img {
+    max-width: 141px;
+    height: 141px;
+    object-fit: cover;
+  }
+
+  .collapse-options {
+    padding-top: 32px;
+
+    .btn {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+  }
+}

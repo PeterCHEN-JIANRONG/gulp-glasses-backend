@@ -19,17 +19,6 @@
         padding-left: $spacer-l;
         color: $gray-900;
         border-color: $success;
-
-        &:hover {
-          color: $success !important;
-          padding-left: 29px;
-          border-left: 4px solid $success;
-          background-color: darken($light, 5%);
-
-          i {
-            color: $success;
-          }
-        }
       }
 
       .active {

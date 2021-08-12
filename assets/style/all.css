@@ -8857,12 +8857,11 @@ img {
   padding-bottom: 2rem; }
 
 .sidebar {
-  display: block;
   min-width: 296px; }
   .sidebar .navbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: calc(100vh); }
+    min-height: calc(100vh); }
     .sidebar .navbar-brand {
       margin-left: 2rem;
       margin-bottom: 2rem;

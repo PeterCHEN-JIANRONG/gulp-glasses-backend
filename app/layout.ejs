@@ -36,13 +36,13 @@
                 <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">question_answer</i>Question</a>
               </li>
               <li class="nav-item mb-3">
-                <a class="nav-link fw-bold py-1 d-flex align-items-center active" href="./assignment.html"><i class="material-icons me-3">assignment</i>Assignment</a>
+                <a class="nav-link fw-bold py-1 d-flex align-items-center <%- current == 'assignment'? 'active' : '' %>" href="./assignment.html"><i class="material-icons me-3">assignment</i>Assignment</a>
               </li>
               <li class="nav-item mb-3">
                 <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">video_library</i>Course</a>
               </li>
               <li class="nav-item mb-3">
-                <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./admin.html"><i class="material-icons me-3">people</i>Admin</a>
+                <a class="nav-link fw-bold py-1 d-flex align-items-center <%- current == 'admin'? 'active' : '' %>" href="./admin.html"><i class="material-icons me-3">people</i>Admin</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-bold py-1 d-flex align-items-center" href="./assignment.html"><i class="material-icons me-3">settings</i>Settings</a>

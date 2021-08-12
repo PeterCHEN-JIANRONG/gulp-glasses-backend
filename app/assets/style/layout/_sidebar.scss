@@ -1,11 +1,10 @@
 .sidebar {
-  display: block;
   min-width: 296px;
 
   .navbar {
     padding-top: $spacer-l;
     padding-bottom: $spacer-l;
-    height: calc(100vh);
+    min-height: calc(100vh);
 
     &-brand {
       margin-left: $spacer-l;
